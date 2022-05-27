@@ -1,12 +1,3 @@
-def recebe_letra(palavra, letras):
-    letra_get = str(input('Digite uma letra: '))
-
-    for c in range(len(palavra)):
-        if letra_get == palavra[c]:
-            letras[c] = letra_get
-    return letras
-
-
 def forca(erros):
     if erros == 1:
         print('(|)')
@@ -32,10 +23,3 @@ def forca(erros):
               '\|/\n'
               ' |\n'
               '/ \ ')
-
-
-def confere(palavra, letras):
-    if __name__ == '__main__':
-        if not recebe_letra(palavra, letras):
-            return False
-        return True
