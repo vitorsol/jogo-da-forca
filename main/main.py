@@ -1,8 +1,13 @@
-from functions import recebe_letra
+from functions import *
 
-palavra = [letra for letra in input('Primeira palavra: ')]
+print('*' * 10, 'Jogo da Forca', '*' * 10)
+
+palavra = ['t', 'e', 's', 't', 'e']
 letras = ['_' for letra in palavra]
 erros = 0
 
 while erros < 6:
-    recebe_letra(palavra, letras)
+    print(recebe_letra(palavra, letras))
+    if not confere:
+        erros += 1
+    forca(erros)
