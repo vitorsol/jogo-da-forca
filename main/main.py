@@ -8,6 +8,6 @@ erros = 0
 
 while erros < 6:
     print(recebe_letra(palavra, letras))
-    if not confere:
+    if not confere(palavra, letras):
         erros += 1
-    forca(erros)
+    print(erros)

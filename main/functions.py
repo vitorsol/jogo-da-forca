@@ -35,6 +35,7 @@ def forca(erros):
 
 
 def confere(palavra, letras):
-    if not recebe_letra(palavra, letras):
-        return False
-    return True
+    if __name__ == '__main__':
+        if not recebe_letra(palavra, letras):
+            return False
+        return True
