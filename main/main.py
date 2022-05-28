@@ -8,7 +8,8 @@ erros = 0
 letras_erradas = []
 
 print('\n', letras, '\n')
-while erros < 6:
+
+while erros < 7:
     print('*' * 35)
     letra_get = str(input('\n->: '))
 
@@ -25,4 +26,6 @@ while erros < 6:
     print('\n', letras, '\n')
     forca(erros)
     print('\n', letras_erradas, '\n')
-
+    if erros == 6:
+        print('GAME OVER')
+        break
